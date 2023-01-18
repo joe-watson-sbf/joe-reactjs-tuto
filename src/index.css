@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+  color: rgb(25, 25, 25);
+  font-family: 'Open Sans', sans-serif;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.flex-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: .5em;
+  padding: .2rem;
+}
+
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+button{
+  padding: .5rem 1rem;
+}
+
+.input-group > input{
+  padding: .3rem;
+  border:  1px solid #a3a3a3;
+  font-size: 1rem;
+  border-radius: .2rem;
+}
+
+.delete{
+  color: rgb(255, 0, 0);
+  display: block;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: .1rem;
+  transition: all .2s ease-in-out;
+}
+
+.delete:hover{
+  color: rgb(255, 0, 0, .5);
+}
+
+
+.add-more{
+  border: none;
+  color: #477faa;
+  background: none;
+  font-size: .8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: .1rem;
+  transition: all .2s ease-in-out;
+}
+
+.add-more:hover{
+  color: #0095ff;
+}
+
+
+.btn{
+  border: none;
+  background-color: #477faa;
+  color: white;
+  padding: .5rem 1rem;
+  font-size: .8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 1rem;
+  border-radius: .1rem;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover{
+  background-color: #0095ff;
 }
