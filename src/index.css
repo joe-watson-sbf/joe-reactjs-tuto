@@ -38,7 +38,9 @@ main{
   gap: .5em;
   padding: .2rem;
 }
-
+label{
+  display: block;
+}
 
 .flex-col{
   display: flex;
@@ -65,9 +67,11 @@ button{
 .delete{
   color: rgb(255, 0, 0);
   display: block;
+  background: none;
+  border: none;
   font-size: 1.7rem;
+  margin-bottom: -1rem;
   cursor: pointer;
-  padding: .1rem;
   transition: all .2s ease-in-out;
 }
 
